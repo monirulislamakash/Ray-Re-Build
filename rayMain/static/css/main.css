@@ -1,0 +1,3278 @@
+/* Common */
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mpusCurserNoDrop {
+    cursor: no-drop;
+}
+
+/* common */
+.navMenu {
+    background: transparent !important;
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    z-index: 2;
+}
+
+.logo {
+    width: 118px;
+    height: 80px;
+}
+
+.navMenuItem {
+    color: #fff !important;
+    font-family: Oswald;
+    font-weight: bold;
+}
+
+.joinButton {
+    background: #fff;
+    color: #10387A;
+    border: none;
+    font-weight: bold;
+    font-family: Oswald;
+    width: 130px;
+    height: 54px;
+    font-size: 18px !important;
+    border-radius: 7px;
+
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    background: #00BCD0;
+}
+
+.joinButton:hover {
+    background: #00BCD0;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.nav-link {
+    font-size: 18px !important;
+    margin-right: 20px;
+}
+
+.HeroSection {
+    width: 100%;
+    height: 872px;
+    position: relative;
+    overflow: hidden;
+}
+
+.AboutHeroSection {
+    width: 100%;
+    height: 399px;
+    position: relative;
+    overflow: hidden;
+}
+
+.HeroSectionBG {
+    width: 100%;
+    height: 872px;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    z-index: 0;
+}
+
+.AboutHeroSectionBG {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    z-index: 0;
+}
+
+.woldWaper {
+    width: 100%;
+    max-width: 1440px;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -25%);
+}
+
+.AboutwoldWaper {
+    width: 100%;
+    max-width: 1440px;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -15%);
+}
+
+.wold {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    animation: world 260s infinite;
+    animation-timing-function: linear;
+    filter: drop-shadow(0px 0px 30px #00BCD0);
+}
+
+.Aboutwold {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    animation: world 260s infinite;
+    animation-timing-function: linear;
+    filter: drop-shadow(0px 0px 30px #00BCD0);
+}
+
+.Overlay {
+    width: 100%;
+    height: 872px;
+    background-image: linear-gradient(180deg, #011536, #011536b5, #01153600);
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    z-index: 1;
+}
+
+.AboutOverlay {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #011536, #011536b5, #01153600);
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    z-index: 1;
+}
+
+.carv {
+    width: 100%;
+    height: 98px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0%;
+}
+
+.Aboutcarv {
+    width: 100%;
+    height: 98px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0%;
+}
+
+.heroContent {
+    width: 80%;
+}
+
+.AboutheroContent {
+    width: 80%;
+}
+
+.heroContent {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+.PublishHeroContent {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+.AboutheroContent {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+.heroHeader,
+.PublisherheroHeader {
+    width: 60%;
+    height: 128px;
+    font-family: Oswald;
+    font-weight: bold;
+    font-size: 54px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.PublisherheroHeader {
+    height: 90px;
+}
+
+.AboutheroHeader {
+    width: 100%;
+    height: 128px;
+    font-family: Oswald;
+    font-weight: bold;
+    font-size: 54px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.heroButtonWaper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.HeroText {
+    width: 770px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #fff;
+}
+
+.heroButton1 {
+    width: 157px;
+    height: 59px;
+    background: #00BCD0;
+    color: #10387A;
+    font-family: Oswald;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.heroButton2 {
+    width: 157px;
+    height: 59px;
+    background: #fff;
+    color: #10387A;
+    font-family: Oswald;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.counterBox {
+    width: 420px;
+    height: 111px;
+    border: 1px solid #00BCD0;
+    background: #ffffff1f;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    padding-left: 15px;
+}
+
+.counter {
+    width: 32%;
+    height: 85px;
+    color: #fff;
+    text-align: center;
+}
+
+.counter h3 {
+    font-size: 40px;
+    font-family: Oswald;
+    font-weight: bold;
+}
+
+.counter p {
+    font-size: 21px;
+    font-family: Oswald;
+}
+
+.whatWeDo {
+    width: 100%;
+    height: 600px;
+    padding-top: 70px;
+    margin-bottom: 50px;
+}
+
+.whatWeDoTitle {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: Oswald;
+    color: #10387A;
+    text-transform: uppercase;
+
+}
+
+.whatWeDoText {
+    color: #4D5F7C;
+    text-align: center;
+    font-size: 18px;
+    font-family: Poppins;
+}
+
+.whatWeDoCardWaper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+    width: 402px;
+    height: 356px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    box-shadow: 0px 14px 64px 0px rgba(0, 58, 127, 0.25);
+    border: none;
+}
+
+.cardContent {
+    text-align: center;
+}
+
+.cardTitel {
+    font-size: 36px;
+    font-family: Oswald;
+    font-weight: 500;
+    color: #10387A;
+    text-transform: uppercase;
+}
+
+.cardText {
+    font-size: 16px;
+    font-family: Poppins;
+    color: #4D5F7C;
+}
+
+.cardButton {
+    width: 165px;
+    height: 59px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: Oswald;
+    font-weight: bold;
+    color: #00BCD0 !important;
+    border: 2px solid #00BCD0;
+    background: #fff;
+    filter: drop-shadow(0px 10px 10px #00bcd057);
+    text-transform: uppercase;
+}
+
+.cardIcon {
+    width: 78px;
+    height: 78px;
+}
+
+.trafficPatner {
+    width: 100%;
+    background: #E9FDFF;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+
+.trafficPatnerTitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 48px;
+    font-family: Oswald;
+    text-align: center;
+    color: #10387A;
+}
+
+.trafficPatnerWaper {
+    max-width: 1440px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    height: 200px;
+}
+
+.trafficPatnerWaperItem {
+    width: fit-content;
+    animation: xscroller 20s infinite linear;
+    display: flex;
+}
+
+.trafficPatnerWaperItem:hover {
+    animation-play-state: paused;
+}
+
+.trafficPatnerImage {
+    display: inline-block;
+    margin: 15px;
+    border-radius: 7px;
+    box-shadow: 0px 14px 42px 0px rgba(0, 58, 127, 0.20);
+}
+
+.whyChooseUs {
+    width: 100%;
+    padding: 50px;
+}
+
+.whyChooseUsWaper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.whyChooseUsLeft {
+    width: 50%;
+    padding: 20px;
+}
+
+.whyChooseUsLeft h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #10387A;
+    font-family: Oswald;
+}
+
+.whyChooseUsLeft p {
+    color: #4D5F7C;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.whyChooseUsButton {
+    width: 165px;
+    height: 60px;
+    color: #10387A;
+    font-size: 18px;
+    background: #00BCD0;
+    border: 10px;
+    border-radius: 7px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.whyChooseUsRight {
+    width: 50%;
+    padding: 20px;
+}
+
+.whyChooseUsRight img {
+    width: 100%;
+}
+
+.FAQ {
+    width: 100%;
+    padding: 50px;
+    height: auto;
+    background: #E9FDFF;
+    text-align: center;
+}
+
+.FAQHeader {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #10387A;
+    font-weight: bold;
+    font-family: Oswald;
+}
+
+.mainFAQ {
+    width: 835px !important;
+    height: auto;
+    margin: 0 auto;
+    border: none !important;
+}
+
+.mainFAQItem {
+    box-shadow: 0px 3px 7px 0px rgba(13, 71, 167, 0.14);
+}
+
+.mainFAQ button {
+    height: 72px !important;
+    display: flex !important;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: transparent;
+    box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.accordion {
+    --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.focus-ring-primary {
+    --bs-focus-ring-color: rgba(var(--bs-primary-rgb), var(--bs-focus-ring-opacity));
+}
+
+.FAQQustionTitel {
+    font-size: 22px;
+    color: #10387A;
+    font-family: Oswald;
+    font-weight: 500;
+}
+
+.accordion-button::after {
+    background: transparent !important;
+    color: #fff !important;
+}
+
+.FAQicon {
+    position: absolute;
+    right: 4%;
+    background: #00BCD0;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.featuredIn {
+    background: #fff !important;
+}
+
+.forPCTP {
+    display: flex;
+}
+
+.forMboileTP {
+    display: none !important;
+}
+
+.crouselForPc {
+    display: block;
+}
+
+.crouselForMobile {
+    display: none;
+}
+
+.proudlySponsoring {
+    width: 100%;
+    padding: 70px;
+    background: #10387A;
+    color: #fff;
+}
+
+.proudlySponsoringHeader {
+    font-size: 48px;
+    text-align: center;
+    font-family: Oswald;
+    text-transform: uppercase;
+}
+
+.proudlySponsoringText {
+    text-align: center;
+    font-size: 18px;
+    font-family: Poppins;
+}
+
+.proudlySponsoringWaper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.proudlySponsoringCard {
+    width: 31%;
+    height: auto;
+    padding: 20px;
+    background: #ffffff36;
+    backdrop-filter: blur(8.5px);
+    border: 2px solid;
+    border-image: linear-gradient(to right, #153261, #00BCD0)1;
+    border-radius: 7px !important;
+}
+
+.proudlySponsoringCardTitel {
+    display: flex;
+    align-items: center;
+    font-family: Oswald;
+}
+
+.proudlySponsoringCardTitel img {
+    width: 40px;
+    height: 40px;
+}
+
+.proudlySponsoringCardText {
+    font-size: 16px;
+    font-family: Poppins;
+}
+
+.proudlySponsoringCardButton {
+    background: #153261;
+    font-size: 18px;
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #00BCD0;
+    color: #00BCD0;
+    width: 180px;
+    height: 60px;
+    box-shadow: 0px 9px 50px -25px #00BCD0;
+}
+
+.imagesGalary {
+    width: 100%;
+    padding: 50px;
+}
+
+.imagesGalaryHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imagesGalaryHeaderTitel {
+    text-transform: uppercase;
+    color: #10387A;
+    font-size: 38px;
+    font-weight: bold;
+    font-family: Oswald;
+    display: flex;
+    align-items: center;
+}
+
+.imagesGalaryButton {
+    width: 195px;
+    height: 59px;
+    color: #00BCD0;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #00BCD0;
+    border-radius: 7px;
+    background: #fff;
+}
+
+.galleryCardImagesWaper {
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.galleryCardImagesImages {
+    width: 24%;
+    height: auto;
+    box-shadow: 0px 5px 7px 3px rgba(13, 71, 167, 0.14);
+    border-radius: 7px;
+}
+
+.carousel-indicators {
+    bottom: -5%;
+}
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #D9D9D9;
+    background-clip: padding-box;
+    border: 0;
+    border-radius: 30px;
+    opacity: 1;
+    transition: opacity .6s ease;
+}
+
+.carousel-indicators .active {
+    background-color: #56C0CC;
+    width: 24px;
+}
+
+.newsLatter {
+    width: 100%;
+    max-width: 1920px;
+    height: 384px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.newsLatterBG {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+}
+
+.newsLatterOverlay {
+    width: 100%;
+    height: 100%;
+    background: #10397aae;
+    position: absolute;
+}
+
+.newsLatterContent {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsLatterContentTitel {
+    font-size: 48px;
+    font-family: Oswald;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.newsLatterContentText {
+    font-size: 18px;
+    color: #fff;
+    font-family: Poppins;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ourBlog {
+    padding: 50px;
+}
+
+.ourBlogTitel {
+    font-size: 48px;
+    font-weight: bold;
+    color: #10387A;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Oswald;
+}
+
+.ourBlogWaper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.ourBlogCard {
+    width: 31%;
+    height: auto;
+    background: #e9fdff;
+    border-radius: 10px;
+    box-shadow: 0px 14px 64px 0px #00397f37;
+}
+
+.ourBlogCardImages {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.ourBlogCardText {
+    font-size: 15px;
+    color: #10387A;
+    font-weight: 600;
+    padding: 5px !important;
+    margin: 0px !important;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.WhoWeAre {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.WhoWeAreWaper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.WhoWeArerImages {
+    width: 50%;
+    height: auto;
+}
+
+.WhoWeArerImages img {
+    width: 100%;
+    height: auto;
+}
+
+.WhoWeAreContent {
+    width: 50%;
+    height: auto;
+}
+
+.WhoWeAreContent h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #10387A;
+    font-family: Oswald;
+}
+
+.WhoWeAreContent p {
+    font-size: 18px;
+    font-family: Poppins;
+}
+
+.MissionVision {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #2a5df80d;
+}
+
+.MissionVisionWaper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Mission {
+    width: 50%;
+    height: auto;
+    padding: 30px;
+}
+
+.Vision {
+    width: 50%;
+    height: auto;
+    padding: 30px;
+}
+
+.MissionVisionIcon {
+    width: 70px;
+    height: 70px;
+    display: block;
+    background: #DFFCFF;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.MissionVisionIcon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.Mission h1,
+.Vision h1 {
+    font-size: 48px;
+    font-family: Oswald;
+    color: #10387A;
+}
+
+.Mission p,
+.Vision p {
+    font-size: 18px;
+    font-family: Poppins;
+}
+
+.AboutFAQ {
+    width: 100%;
+    padding: 50px;
+    height: auto;
+    background: #fff;
+    text-align: center;
+}
+
+.PerformanceModels {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.PerformanceModelsContent {
+    width: 50%;
+    height: auto;
+    padding: 10px;
+}
+
+.PerformanceModelsTitel {
+    font-size: 48px;
+    font-family: Oswald;
+    color: #10387A;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.PerformanceModelsText {
+    font-size: 18px;
+    font-family: Poppins;
+}
+
+.PerformanceModelsImages {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+}
+
+.VerticalsBenefits {
+    width: 100%;
+    background: #FBFBFB;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Verticals {
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+}
+
+.Benefits {
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+}
+
+.BenifetList {
+    font-size: 24px !important;
+    font-family: Oswald !important;
+    color: #10387A;
+    padding: 0px;
+    margin: 0px;
+}
+
+.VerticalsTable tr td {
+    padding-right: 20px;
+    padding-top: 10px;
+    font-size: 24px;
+    font-family: Oswald;
+    color: #10387A;
+}
+
+.VerticalsTable tr td svg {
+    color: #00BCD0;
+}
+
+.VerticalsTitel {
+    font-size: 48px;
+    font-family: Oswald;
+    color: #10387A;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.VerticalsBenefits p {
+    font-size: 18px;
+    font-family: Poppins;
+}
+
+.VerticalsBenefits p svg {
+    color: #00BCD0;
+}
+
+.Security {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.SecurityTitel {
+    font-size: 48px;
+    color: #10387A;
+    font-family: Oswald;
+    text-transform: uppercase;
+}
+
+.SecurityText {
+    color: #4D5F7C;
+    font-size: 18px;
+    font-family: Poppins;
+}
+
+.SecurityCardWaper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.SecurityCard {
+    width: 23%;
+    height: 365px;
+    padding: 10px;
+    box-shadow: 0px 14px 64px 0px #00397f37;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.SecurityCardIcon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 2px dotted #10397a5c;
+    background: #DFFCFF;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SecurityCardTitel {
+    text-transform: uppercase;
+    color: #10387A;
+    font-family: Oswald;
+}
+
+.SecurityCardText {
+    font-size: 16px;
+    color: #4D5F7C;
+}
+
+.PayPerCallHeroSection {
+    width: 100%;
+    height: 896px;
+    position: relative;
+    overflow: hidden;
+}
+
+.paypercallherobg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    left: 0%;
+    top: 0%;
+}
+
+.PayPerCallHeroSectionContent {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.PayPerCallHeroSectionContentText {
+    width: 50%;
+    padding: 20px;
+}
+
+.PayPerCallHeroSectionContentTitel {
+    font-size: 54px;
+    color: #fff;
+    font-weight: bold;
+    font-family: Oswald;
+}
+
+.PayPerCallHeroSectionContentSubTitel {
+    color: #00BCD0;
+    font-size: 18px;
+    font-family: Poppins;
+}
+
+.PayPerCallHeroSectionContentpra {
+    color: #fff;
+    font-size: 18px;
+    font-family: Poppins;
+}
+
+.PayPerCallHeroSectionContentImage {
+    width: 50%;
+}
+
+.PayPerCallHeroSectionContentImage img {
+    width: 100%;
+}
+
+.OutcomeDrivenCalls {
+    background: #E9FDFF;
+    padding-bottom: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.OutcomeDrivenCallsWaper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.OutcomeDrivenCallsImages {
+    width: 50%;
+    height: auto;
+}
+
+.OutcomeDrivenCallsImages img {
+    width: 100%;
+}
+
+.OutcomeDrivenCallsContent {
+    width: 50%;
+    height: auto;
+}
+
+.OutcomeDrivenCallsContentTitel {
+    font-size: 48px;
+    font-family: Oswald;
+    color: #10387A;
+    text-transform: uppercase;
+}
+
+.outcomList {
+    color: #10387A;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.outcomList svg {
+    color: #00BCD0;
+}
+
+.WhatWeProvide {
+    padding: 50px;
+}
+
+.WhatWeProvideTitel {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #10387A;
+    font-weight: bold;
+    font-family: Oswald;
+    text-align: center;
+}
+
+.WhatWeProvideCardWaper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.WhatWeProvideCard {
+    width: 47%;
+    height: 258px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 14px 64px 0px #00397f37;
+}
+
+.WhatWeProvideCardTitelWeber {
+    display: flex;
+    align-items: center;
+}
+
+.WhatWeProvideCardIcon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: 2px dotted #10397a5c;
+    background: #DFFCFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.WhatWeProvideCardTitelWeber h3 {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Oswald;
+    margin-left: 20px;
+    color: #00BCD0;
+}
+
+.WhatWeProvideCardText {
+    font-family: Poppins;
+    font-size: 18px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.WhatWeProvideButton {
+    text-align: center;
+}
+
+.OurTopVerticals {
+    width: 100%;
+    background: #E9FDFF;
+    padding: 50px;
+}
+
+.OurTopVerticalsTitel {
+    font-family: Oswald;
+    font-size: 48px;
+    font-weight: bold;
+    color: #10387A;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.OurTopVerticalsText {
+    width: 40%;
+    text-align: center;
+    font-size: 18px;
+    font-family: Poppins;
+    margin: 0 auto;
+}
+
+.OurTopVerticalsWaper {
+    width: 100%;
+    height: auto;
+}
+
+.OurTopVerticalsCardWaper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.OurTopVerticalsCard {
+    width: 32%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 14px 64px 0px #00397f37;
+    border-radius: 10px;
+}
+
+.OurTopVerticalsCardIcon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 2px dotted #10397a5c;
+    background: #DFFCFF;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.OurTopVerticalsCardTitel {
+    font-size: 28px;
+    font-weight: 600;
+    color: #10387A;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.OurTopVerticalsCardText {
+    font-size: 16px;
+    color: #10387A;
+    text-align: center;
+    font-family: Poppins;
+}
+
+.Blog {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.BlogMenu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.BlogMenuItemWaper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.BlogMenuItemWaper a {
+    /* width:120px; */
+    padding: 15px;
+    text-align: center;
+    margin-right: 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #757575;
+    font-size: 16px;
+    font-family: Poppins;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.BlogMenuItemWaperActive {
+    background: #10387A;
+    color: #fff !important;
+}
+
+.BlogMenuSearchWaper {
+    display: flex !important;
+    align-items: center !important;
+    font-family: Poppins;
+}
+
+.BlogCardWaper {
+    width: 100%;
+    max-width: 1440px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.BlogCard {
+    width: 32%;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 24px 0px #10387A2E;
+    display: inline-block;
+    margin: 0.5%;
+}
+
+.BlogCardImages {
+    width: 100%;
+    height: 225px;
+}
+
+.BlogCardContent {
+    padding: 10px;
+}
+
+.BlogCardContentCatagori {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    font-family: Oswald;
+    padding: 0px;
+    margin: 0px;
+    color: #00BCD0;
+}
+
+.BlogCardContentTitel {
+    height: 53px;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: Oswald;
+    color: #10387A;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.BlogCardContentAuthordate {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.BlogCardAutherProfile {
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+}
+
+.BlogCardAutherName {
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    color: #69758A;
+}
+
+.BlogCardDate {
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    color: #69758A;
+}
+
+.BlogGalary {
+    background: #E9FDFF;
+}
+
+.pagynator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pageNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-family: Poppins;
+}
+
+.pageNumberActive {
+    background: #00BCD0;
+    color: #fff;
+}
+
+.pagynatorButton {
+    background: none;
+    border: none;
+    font-family: Poppins;
+    color: #757575;
+}
+
+.DetailsBlog {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.DetailsBlogMain {
+    width: 70%;
+    height: auto;
+    padding: 10px;
+}
+
+.DetailsBlogWiaz {
+    width: 30%;
+    height: auto;
+    padding: 10px;
+}
+
+.Thumnail {
+    width: 100%;
+    height: auto;
+}
+
+.Thumnail img {
+    width: 100%;
+    height: auto;
+}
+
+.BlogShear {
+    width: 50%;
+    height: 100px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.BlogShearButton {
+    background: none;
+    border: 2px solid #E8E8E8;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    color: #868686;
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+.BlogShearSosalIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid #56C0CC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RecentPost {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #33333329;
+    height: auto;
+    overflow: hidden;
+}
+
+.RecentPostTitel {
+    color: #10387A;
+    font-family: Oswald;
+    font-size: 22px;
+    background: #F6F7F9;
+    padding: 20px;
+}
+
+.RecentPostCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.RecentPostCardImages {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.RecentPostCardContent {
+    padding-left: 10px;
+}
+
+.RecentPostCardTitel {
+    margin: 0px;
+    padding: 0px;
+    color: #10387A;
+    font-family: Oswald;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.RecentPostCardPostDate {
+    margin: 0px;
+    padding: 0px;
+    color: rgba(77, 95, 124, 0.90);
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.EventsCardWaper {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+.EventsCard {
+    width: 32%;
+    height: 480px;
+    /* background:red; */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 24px 0px #10387A2E;
+    display: inline-block;
+    margin: 0.5%;
+}
+
+.EventsCardImages {
+    width: 100%;
+    height: 350px;
+}
+
+.EventsCardContent {
+    padding: 10px;
+}
+
+.EventsCardTitel {
+    color: #10387A;
+    font-family: Oswald;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    text-transform: capitalize;
+    margin: 0px;
+    padding: 0px;
+}
+
+.EventsCardDateLocation {
+    margin: 0px;
+    padding: 0px;
+    color: #00BCD0;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.EventsCardDateLocation span {
+    margin-left: 5px;
+}
+
+.EventDEtailsPageWaper {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+.EmployeeBenefits {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background: #E9FDFF;
+}
+
+.EmployeeBenefitsCardWaper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.EmployeeBenefitsCard {
+    width: 23%;
+    height: 205px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 14px 64px 0px rgba(0, 57, 127, 0.164);
+}
+
+.EmployeeBenefitsCardIcon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background: #CFFAFF;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.EmployeeBenefitsCardTitel {
+    color: #10387A;
+    font-family: Oswald;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    /* 30.8px */
+    letter-spacing: -0.3px;
+}
+
+.EmployeeBenefitsTitel {
+    color: #10387A;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+.MainJobCardWaper {
+    width: 100%;
+    padding: 50px;
+    height: auto;
+}
+
+.JobCardWaper {
+    width: 100%;
+    height: auto;
+}
+
+.JobCard {
+    width: 32%;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 24px 0px #10387A2E;
+    display: inline-block;
+    margin: 0.5%;
+    padding: 20px;
+}
+
+.JobCardLocation {
+    color: var(--Text-Color, #1D263A);
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.JobCardTitel {
+    color: #10387A;
+    font-family: Oswald;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    /* 123.077% */
+    letter-spacing: -0.3px;
+}
+
+.JobCardPostion {
+    color: var(--Text-Color, #1D263A);
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    /* 186.667% */
+}
+
+.JobCardTimeButton {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.JobCardTimeButton p {
+    color: var(--Text-Color, #1D263A);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.JobCardButton {
+    border-radius: 7px;
+    background: #00BCD0;
+    box-shadow: 0px 12px 13px 0px rgba(10, 255, 239, 0.16);
+    border: none;
+    width: 150px;
+    height: 50px;
+    color: #10387A;
+    font-family: Oswald;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.contactFormWaper {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+.From {
+    width: 50%;
+    padding: 50px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 14px 64px 0px rgba(0, 58, 127, 0.25);
+    margin: 0 auto;
+}
+
+.succesToster {
+    position: fixed !important;
+    right: 1% !important;
+    bottom: 1% !important;
+    z-index: 2 !important;
+    display: block !important;
+}
+
+.FromTitel {
+    color: #10387A;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 30px;
+    margin-top: -20px;
+}
+
+.tcpaContact {
+    color: #10387A;
+    font-family: Oswald;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.ContactSubmit {
+    width: 100%;
+    border-radius: 7px;
+    background: #00BCD0;
+    box-shadow: 0px 12px 13px 0px rgba(10, 255, 239, 0.16);
+    color: #10387A;
+    height: 50px;
+    border: none;
+    color: #10387A;
+    font-family: Oswald;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.ContactInformationWaper {
+    padding: 50px;
+    width: 100%;
+    height: auto;
+    background: #E9FDFF;
+}
+
+.ContactInformationCardWaper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ContactInformationCard {
+    width: 30%;
+    padding: 30px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 14px 64px 0px rgba(0, 58, 127, 0.25);
+}
+
+.ContactInformationCardTitel {
+    color: #10387A;
+    font-family: Oswald;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    /* 36.4px */
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.ContactInformationCardLocation {
+    color: #00BCD0;
+}
+
+.ContactInformationCardText {
+    color: #10387A;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.ContactInformationCardcall {
+    color: #10387A;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
+.ContactInformationCardEmail {
+    color: #10387A;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+}
+
+.ContactInformationCardIconWaper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ContactInformationCardIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #00BCD0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContactInformationCardFlow {
+    color: #00BCD0;
+    font-family: Oswald;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.jobDetailsSmallIconWaper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.jobDetailsSmallIconWaper p {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    color: #10387A;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    /* 19.2px */
+    text-transform: capitalize;
+}
+
+.MainGalleryWaper {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+.MainGalleryTitel {
+    color: #10387A;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+.GalleryImages {
+    width: 32%;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 24px 0px #10387A2E;
+    display: inline-block;
+    margin: 0.5%;
+    margin-top: 20px;
+}
+
+.GalleryImages:hover {
+    box-shadow: none;
+    transition: linear .5s ease;
+}
+
+.LegalPrivacyPolicyTAC {
+    font-size: 20px;
+    font-family: Poppins;
+}
+
+.footer {
+    width: 100%;
+    height: 415px;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.FooterBG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.footerIconWaper {
+    display: flex;
+    margin-top: 15px;
+}
+
+.footerIcon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border: 2px solid #00bcd0;
+    border-radius: 30px;
+}
+
+.footerWaper {
+    position: absolute;
+    width: 100%;
+    justify-content: space-around;
+    /* background:#fff; */
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -40%);
+}
+
+.footerPhoneFlex {
+    display: flex;
+    justify-content: space-between;
+    width: 28%;
+}
+
+.footerLink h5 {
+    color: #00BCD0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Oswald;
+}
+
+.footerLink ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footerLink ul li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: Poppins;
+    font-size: 14px;
+    line-height: 35px;
+}
+.footerClickLink:hover{
+    color: #00BCD0;
+}
+.text-white:hover{
+    color: #00BCD0 !important;
+}
+
+.footerAddress h5 {
+    color: #00BCD0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Oswald;
+}
+
+.footerAddress svg {
+    color: #00BCD0;
+}
+
+.footerClickLink {
+    color: #fff;
+}
+
+.footerAddress p {
+    padding: 5px !important;
+    margin: 0px !important;
+    font-family: Poppins;
+    font-size: 14px;
+}
+
+.uperFooter {
+    display: flex;
+    justify-content: space-around;
+}
+
+.lowerFooter {
+    width: 80%;
+    float: right;
+}
+
+.lowerFooter hr {
+    color: #00BCD0;
+    background: #00BCD0;
+    height: 1px;
+}
+
+.lowerFooterWaper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.lowerFooterWaper p {
+    padding: 0px !important;
+    margin: 0px !important;
+    color: #fff;
+    font-size: 14px;
+    font-family: Poppins;
+}
+
+.copyright {
+    width: 100%;
+    background: #052150;
+    height: 70px;
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family: Poppins;
+    text-transform: uppercase;
+}
+
+.copyright p {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+/*================ Falling ster============================*/
+.falingSterWaper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: none;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.dropSter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 0.1);
+    animation: animate 3s linear infinite;
+}
+
+.dropSter::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg, #fff, transparent);
+}
+
+.dropSter:nth-child(1) {
+    top: 0;
+    right: 0;
+    left: initial;
+    animation-delay: 0s;
+    animation-duration: 1s;
+}
+
+.dropSter:nth-child(2) {
+    top: 0;
+    right: 80px;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+
+.dropSter:nth-child(3) {
+    top: 80;
+    right: 0px;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+
+.dropSter:nth-child(4) {
+    top: 0;
+    right: 180px;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+
+.dropSter:nth-child(5) {
+    top: 0;
+    right: 400px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+
+.dropSter:nth-child(6) {
+    top: 0;
+    right: 600px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+
+.dropSter:nth-child(7) {
+    top: 300px;
+    right: 0px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+
+.dropSter:nth-child(8) {
+    top: 0px;
+    right: 700px;
+    left: initial;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+
+.dropSter:nth-child(9) {
+    top: 0px;
+    right: 1000px;
+    left: initial;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+}
+
+.dropSter:nth-child(9) {
+    top: 0px;
+    right: 450px;
+    left: initial;
+    animation-delay: 2.75s;
+    animation-duration: 2.75s;
+}
+
+.bargerMenu {
+    width: 54px;
+    height: 54px;
+    border: none;
+    border-radius: 5px;
+    background: #00BCD0;
+    color: #fff;
+}
+
+.joinMobile {
+    height: 54px;
+    width: 130px;
+    font-size: 20px;
+}
+
+.backgroundBlu {
+    background: #10387A;
+}
+
+/* Phone  */
+@media only screen and (max-width: 600px) {
+    .HeroSection {
+        width: 100%;
+        height: 682px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .HeroText {
+        width: auto !important;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+
+    .AboutHeroSection {
+        width: 100%;
+        height: 399px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .heroHeader {
+        width: 100%;
+        height: auto;
+        font-family: Oswald;
+        font-weight: bold;
+        font-size: 10vw;
+        margin: 0 auto;
+        color: #fff;
+    }
+
+    .AboutheroHeader {
+        width: 100%;
+        height: auto;
+        font-family: Oswald;
+        font-weight: bold;
+        font-size: 10vw;
+        margin: 0 auto;
+        color: #fff;
+    }
+
+    .heroContent {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .PublishHeroContent {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        z-index: 1;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -75%);
+    }
+
+    .AboutheroContent {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .wold {
+        width: 200%;
+        height: auto;
+        object-fit: cover;
+        position: absolute;
+        z-index: 1;
+        left: 8%;
+        bottom: -25%;
+        animation: world 200s infinite;
+        animation-timing-function: linear;
+        filter: drop-shadow(0px 0px 30px #00BCD0);
+    }
+
+    .Aboutwold {
+        width: 200%;
+        height: auto;
+        object-fit: cover;
+        position: absolute;
+        z-index: 1;
+        left: 8%;
+        bottom: -25%;
+        animation: world 200s infinite;
+        animation-timing-function: linear;
+        filter: drop-shadow(0px 0px 30px #00BCD0);
+    }
+
+    .counterBox {
+        width: 100%;
+        height: 111px;
+        border: 1px solid #00BCD0;
+        background: #ffffff1f;
+        border-radius: 5px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px;
+        padding-left: 15px;
+    }
+
+    .counter {
+        width: 32%;
+        height: 65px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .counter h3 {
+        font-size: 30px;
+        font-family: Oswald;
+        font-weight: bold;
+        padding: 0px;
+    }
+
+    .counter p {
+        font-size: 16px;
+        font-family: Oswald;
+        padding: 0px;
+    }
+
+    .carv {
+        display: none;
+    }
+
+    .Aboutcarv {
+        display: none;
+    }
+
+    .whatWeDo {
+        width: 100%;
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .whatWeDoCardWaper {
+        display: block;
+        margin-top: 35px;
+    }
+
+    .card {
+        width: 95%;
+        height: 356px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        box-shadow: 0px 0px 20px -6px #10387A;
+        border: none;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+
+    .cardTitel {
+        font-size: 24px;
+        font-family: Oswald;
+        font-weight: 500;
+        color: #10387A;
+        text-transform: uppercase;
+    }
+
+    .trafficPatner {
+        padding: 0px;
+        height: 250px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .trafficPatnerTitle {
+        font-size: 10vw;
+    }
+
+    .cardText {
+        font-size: 16px;
+        font-family: Poppins;
+        color: #4D5F7C;
+    }
+
+    .whyChooseUs {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding: 20px;
+    }
+
+    .whyChooseUsWaper {
+        display: block;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .whyChooseUsLeft {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .whyChooseUsLeft h1 {
+        font-size: 9vw;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #10387A;
+    }
+
+    .whyChooseUsRight {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .FAQ {
+        width: 100%;
+        padding: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: auto;
+        background: #E9FDFF;
+        text-align: center;
+    }
+
+    .AboutFAQ {
+        width: 100%;
+        padding: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: auto;
+        text-align: center;
+    }
+
+    .FAQHeader {
+        font-size: 9vw;
+        text-transform: uppercase;
+        color: #10387A;
+        font-weight: bold;
+    }
+
+    .mainFAQ {
+        width: 100% !important;
+        height: auto;
+        margin: 0 auto;
+        border: none !important;
+    }
+
+    .mainFAQ button {
+        height: auto !important;
+        display: flex !important;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .proudlySponsoring {
+        width: 100%;
+        padding: 20px;
+        background: #10387A;
+        color: #fff;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .proudlySponsoringHeader {
+        font-size: 8vw;
+        text-align: center;
+        font-family: Oswald;
+        text-transform: uppercase;
+    }
+
+    .proudlySponsoringText {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .proudlySponsoringWaper {
+        width: 100%;
+        display: block;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 10px;
+    }
+
+    .proudlySponsoringCard {
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+    }
+
+    .imagesGalary {
+        width: 100%;
+        padding-top: 50px;
+        padding: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .imagesGalaryHeaderTitel {
+        font-size: 9vw;
+    }
+
+    .galleryCardImagesWaper {
+        padding-top: 0px;
+    }
+
+    .galleryCardImagesImages {
+        width: 45%;
+    }
+
+    .imagesGalaryButton {
+        width: 152px;
+        height: 59px;
+        color: #00BCD0;
+        font-size: 18px;
+        font-weight: bold;
+        border: 2px solid #00BCD0;
+        border-radius: 7px;
+        background: #fff;
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .newsLatterButton {
+        display: flex;
+    }
+
+    .ourBlog {
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .ourBlogTitel {
+        font-size: 10vw;
+    }
+
+    .ourBlogWaper {
+        display: block;
+    }
+
+    .ourBlogCard {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .WhoWeAre {
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .WhoWeAreWaper {
+        display: block;
+    }
+
+    .WhoWeArerImages,
+    .WhoWeAreContent {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        height: auto;
+    }
+
+    .WhoWeAreContent {
+        min-height: 414px !important;
+        max-height: auto;
+    }
+
+    .WhoWeAreContent p {
+        text-align: justify;
+    }
+
+    .WhoWeArerImages img {
+        width: 105%;
+        height: 277.33px;
+    }
+
+    .MissionVisionWaper {
+        display: block;
+    }
+
+    .Mission,
+    .Vision {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .PerformanceModels {
+        width: 100%;
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: block;
+    }
+
+    .PerformanceModelsContent {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .PerformanceModelsTitel {
+        font-size: 38px;
+    }
+
+    .PerformanceModelsText {
+        font-size: 16px;
+    }
+
+    .PerformanceModelsImages {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .PerformanceModelsImages img {
+        width: 100%;
+        height: 100%;
+        margin-top: 10px;
+    }
+
+    .VerticalsBenefits {
+        width: 100%;
+        background: #FBFBFB;
+        display: block;
+        justify-content: space-around;
+    }
+
+    .VerticalsBenefits p {
+        font-size: 16px;
+    }
+
+    .Verticals {
+        width: 100%;
+        padding: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .VerticalsTitel {
+        font-size: 38px;
+    }
+
+    .BenifetList {
+        font-size: 18px !important;
+    }
+
+    .Benefits {
+        width: 100%;
+        padding: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .Security {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+        overflow: hidden;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .SecurityCardWaper {
+        display: block;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .SecurityCard {
+        width: 100%;
+        height: 365px;
+        padding: 10px;
+        box-shadow: 0px 14px 64px 0px #00397f4b;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .PayPerCallHeroSection {
+        width: 100%;
+        height: 1000px;
+    }
+
+    .AffiliatePayPerCallHeroSection {
+        height: 1050px !important;
+    }
+
+    .PayPerCallHeroSectionContent {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: 50%;
+        top: 80%;
+        transform: translate(-50%, -80%);
+        display: block;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .PayPerCallHeroSectionContentTitel {
+        font-size: 9vw;
+        color: #fff;
+        font-weight: bold;
+        font-family: Oswald;
+    }
+
+    .PayPerCallHeroSectionContentText {
+        width: 100%;
+    }
+
+    .PayPerCallHeroSectionContentImage {
+        width: 100%;
+    }
+
+    .OutcomeDrivenCallsWaper {
+        display: block;
+        padding-top: 30px;
+    }
+
+    .OutcomeDrivenCallsImages {
+        width: 100%;
+        height: auto;
+    }
+
+    .OutcomeDrivenCallsContent {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .WhatWeProvide {
+        padding: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .WhatWeProvideCardWaper {
+        display: block;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+
+    .WhatWeProvideCard {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 14px 64px 0px #00397f37;
+        margin-top: 30px;
+    }
+
+    .OurTopVerticals {
+        width: 100%;
+        background: #E9FDFF;
+        padding: 30px;
+    }
+
+    .OurTopVerticalsTitel {
+        font-family: Oswald;
+        font-size: 38px;
+        font-weight: bold;
+        color: #10387A;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .OurTopVerticalsText {
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        font-family: Poppins;
+        margin: 0 auto;
+    }
+
+    .OurTopVerticalsCardWaper {
+        width: 100%;
+        height: auto;
+        display: block;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+
+    .OurTopVerticalsCard {
+        width: 100%;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0px 14px 64px 0px #00397f37;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+
+    .BlogMenuItemWaper {
+        overflow-x: scroll;
+    }
+
+    .BlogMenuItemWaper::-webkit-scrollbar {
+        display: none;
+    }
+
+    .BlogMenuSearchWaper {
+        margin-top: 30px;
+    }
+
+    .EmployeeBenefits {
+        padding: 30px;
+    }
+
+    .footer {
+        height: 800px;
+    }
+
+    .uperFooter {
+        display: block;
+    }
+
+    .EmployeeBenefitsCardWaper {
+        display: block;
+    }
+
+    .EmployeeBenefitsTitel {
+        color: #10387A;
+        text-align: center;
+        font-family: Oswald;
+        font-size: 9vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        text-transform: uppercase;
+    }
+
+    .DetailsBlog {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        padding-top: 30px;
+        display: block;
+    }
+
+    .DetailsBlogMain {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .EmployeeBenefitsCard {
+        margin-top: 20px;
+    }
+
+    .BlogShear {
+        width: 100%;
+    }
+
+    .MainJobCardWaper {
+        padding: 10px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .JobCard {
+        width: 100%;
+    }
+
+    .DetailsBlogWiaz {
+        width: 100%;
+    }
+
+    .EventDEtailsPageWaper {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .contactFormWaper {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .From {
+        width: 100%;
+        padding: 10px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 0px 14px 64px 0px rgba(0, 58, 127, 0.25);
+        margin: 0 auto;
+    }
+
+    .ContactInformationCardWaper {
+        display: block;
+    }
+
+    .ContactInformationWaper {
+        padding: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 100%;
+        height: auto;
+        background: #E9FDFF;
+    }
+
+    .ContactInformationCard {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .footerPhoneFlex {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .footerLink {
+        width: 50%;
+    }
+
+    .footerAddress {
+        margin-top: 20px;
+    }
+
+    .lowerFooter {
+        width: 100%;
+        display: block;
+    }
+
+    .lowerFooter hr {
+        display: none;
+    }
+
+    .lowerFooterWaper {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .EventsCardWaper {
+        padding: 15px;
+    }
+
+    .EventsCard {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .Blog {
+        padding: 30px;
+    }
+
+    .BlogCardWaper {
+        padding: 0px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .BlogCard {
+        width: 100%;
+        margin-top:15px;
+    }
+
+    .BlogMenu {
+        display: block;
+    }
+
+    .EmployeeBenefitsCard {
+        width: 100%;
+    }
+
+    .footerWaper {
+        left: 50%;
+        top: 34%;
+        transform: translate(-50%, -36%);
+    }
+
+    .copyright {
+        font-size: 3vw;
+    }
+
+    /* Faling ster */
+    .falingSterWaper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: none;
+        background-size: cover;
+        overflow: hidden;
+        display: none !important;
+        z-index: 0;
+    }
+
+    .dropSter {
+        display: none !important;
+    }
+
+    .forPCTP {
+        display: none !important;
+    }
+
+    .forMboileTP {
+        display: flex !important;
+    }
+
+    .crouselForPc {
+        display: none;
+    }
+
+    .crouselForMobile {
+        display: block;
+    }
+}
+
+/* Animation */
+@keyframes world {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(315deg) translateX(-1000px);
+        opacity: 0;
+    }
+}
+
+@keyframes xscroller {
+    to {
+        transform: translate(-50%);
+    }
+}
+
+
+/* Button */
+
+.slide_from_top {
+    background: #56c1cd;
+    color: #10387a;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.slide_from_top:hover {
+    color: #10387a;
+}
+
+.slide_from_top::after {
+    content: "";
+    background: #ecf0f1;
+    position: absolute;
+    z-index: -1;
+    display: block;
+}
+
+/* Button Color Revarch */
+.slide_from_top_color_reverch {
+    background: #fff;
+    color: #10387a;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.slide_from_top_color_reverch:hover {
+    color: #10387a !important;
+}
+
+.slide_from_top_color_reverch::after {
+    content: "";
+    background: #56c1cd;
+    position: absolute;
+    z-index: -1;
+    display: block;
+}
+
+/* Button Color Revarch End */
+
+.slide_from_top[class^="slide"]::after,
+.slide_from_top_color_reverch[class^="slide"]::after {
+    transition: all 0.8s;
+    height: 0%;
+}
+
+.slide_from_top[class^="slide"]:hover::after,
+.slide_from_top_color_reverch[class^="slide"]:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.8s;
+    height: 180%;
+}
+
+.slide_from_top::after,
+.slide_from_top_color_reverch::after {
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+    border-radius: 0 0 50% 50%;
+}
+
+/* button 2nd Section */
+.slide_from_left {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.slide_from_left:hover {
+    color: #10387a;
+}
+
+.slide_from_left::after {
+    content: "";
+    background: #56c1cd;
+    position: absolute;
+    z-index: -1;
+    display: block;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.slide_from_left[class^="slide"]::after {
+    transition: all 1s;
+    width: 0%;
+}
+
+.slide_from_left[class^="slide"]:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 1s;
+    width: 150%;
+}
+
+.slide_from_left::after {
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+}
+
+.checkbox_from {
+    width: 20px;
+}
+
+.notfound {
+    background-image: url(../../public/images/404.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/*  */
