@@ -4,7 +4,7 @@
 {% endblock %}
 {% block title %}Ray Advertising LLC{% endblock %}
 {% block body %}
-<div class="HeroSection">
+<div class="HeroSection HeroSectionPublisher">
     <img class="HeroSectionBG" src="{% static 'images/Assets/Hero-bg.webp' %}" alt="heroBg" loading="lazy">
     <div class="falingSterWaper">
         <span class="dropSter"></span><span class="dropSter"></span><span class="dropSter"></span><span
@@ -25,11 +25,12 @@
             growth partner.
         </p>
         <div class="heroButtonWaper">
-            <a href="https://rayadvertising.everflowclient.io/affiliate/signup"><button class="slide_from_top heroButton1">GET AN ACCOUNT</button></a>
+            <a href="https://rayadvertising.everflowclient.io/affiliate/signup"><button
+                    class="slide_from_top heroButton1 PublisherHeroButton">GET AN ACCOUNT</button></a>
         </div>
-        <div class="counterBox">
+        <div class="counterBoxPublisher">
             <div class="counter">
-                <h3>300K+</h3>
+                <h3>300 0K+</h3>
                 <p>Active Campaign</p>
             </div>
             <div class="counter">
@@ -37,7 +38,7 @@
                 <p>Affiliate</p>
             </div>
             <div class="counter">
-                <h3>13K+</h3>
+                <h3>10K+</h3>
                 <p>Sponsor</p>
             </div>
         </div>
@@ -51,13 +52,14 @@
             your targeted audience like nobody else. We deal with your business challenges and unite hands as your
             growth partner.
         </p>
-        <a href="https://rayadvertising.everflowclient.io/affiliate/signup"><button class="slide_from_top heroButton1">GET AN ACCOUNT</button></a>
+        <a href="https://rayadvertising.everflowclient.io/affiliate/signup"><button
+                class="slide_from_top heroButton1">GET AN ACCOUNT</button></a>
     </div>
     <div class="PerformanceModelsImages">
         <img src="{% static 'images/Assets/pe.webp' %}" alt="">
     </div>
 </div>
-<div class="trafficPatner">
+<div class="trafficPatner publishertrafficPatner">
     <h1 class="trafficPatnerTitle">Traffic partners</h1>
     <div class="trafficPatnerWaper">
         <div class="trafficPatnerWaperItem">
@@ -70,114 +72,146 @@
     </div>
 </div>
 
-<div class="VerticalsBenefits container">
-    <div class="Verticals">
-        <h1 class="VerticalsTitel">Our Top Verticals</h1>
-        <p>
-            Affiliates display ads with a unique phone number, and when a customer calls, they are instantly connected
-            to your sales team or call center.
-        </p>
-        <table class="VerticalsTable mb-4">
-            <tr>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                    </svg>
-                    Insurance
-                </td>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                    </svg>
-                    Home Improvement
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                    </svg>
-                    Legal
-                </td>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                    </svg>
-                    Finance
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                    </svg>
-                    Sweeps
-                </td>
-                <td>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                    </svg>
-                    Nutra
-                </td>
-            </tr>
-        </table>
-        <a href="https://rayadvertising.everflowclient.io/affiliate/signup"><button class="slide_from_top heroButton1">GET AN ACCOUNT</button></a>
-    </div>
-    <div class="Benefits">
-        <h1 class="VerticalsTitel">Perks & Benefits</h1>
-        <p>
-            Affiliates display ads with a unique phone number, and when a customer calls, they are instantly connected
-            to your sales team or call center.
-        </p>
-        <p class="BenifetList">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                <path
-                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-            </svg>
-            Generous referral and retention programs
-        </p>
-        <p class="BenifetList">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                <path
-                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-            </svg>
-            Exclusive affiliate events for partners
-        </p>
-        <p class="BenifetList">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                <path
-                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-            </svg>
-            Contests and bonus programs with luxury prizes
-        </p>
-        <p class="mb-4 BenifetList">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                <path
-                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-            </svg>
-            VIP program for high-performing affiliates
-        </p>
-        <a><button class="slide_from_top heroButton1">SIGN UP NOW</button></a>
+<div class="VerticalsBenefits ">
+    <img class="VerticalsBenefitsBG" src="{% static 'images/Assets/CorePerformance.webp' %}" alt="verticals.webp"
+        loading="lazy">
+    <div class="VerticalsBenefitsCardWaper container" data-aos="zoom-in">
+        <div class="VerticalsBenefitsCard">
+            <h1 class="VerticalsBenefitsCardTitel">Our Top Verticals</h1>
+            <p class="VerticalsBenefitsCardText">
+                Affiliates display ads with a unique phone number, and when a customer calls, they are instantly
+                connected to your sales team or call center.
+            </p>
+            <table>
+                <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <path
+                                d="M15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 21.9 8.1 27.5 15 27.5C21.9 27.5 27.5 21.9 27.5 15C27.5 8.1 21.9 2.5 15 2.5ZM20.0375 12.75L14.2 18.575C14.025 18.7625 13.7875 18.85 13.5375 18.85C13.3 18.85 13.0625 18.7625 12.875 18.575L9.9625 15.6625C9.6 15.3 9.6 14.7 9.9625 14.3375C10.325 13.975 10.925 13.975 11.2875 14.3375L13.5375 16.5875L18.7125 11.425C19.075 11.05 19.675 11.05 20.0375 11.425C20.4 11.7875 20.4 12.375 20.0375 12.75Z"
+                                fill="#00BCD0" />
+                        </svg>
+                        Insurance
+                    </td>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <path
+                                d="M15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 21.9 8.1 27.5 15 27.5C21.9 27.5 27.5 21.9 27.5 15C27.5 8.1 21.9 2.5 15 2.5ZM20.0375 12.75L14.2 18.575C14.025 18.7625 13.7875 18.85 13.5375 18.85C13.3 18.85 13.0625 18.7625 12.875 18.575L9.9625 15.6625C9.6 15.3 9.6 14.7 9.9625 14.3375C10.325 13.975 10.925 13.975 11.2875 14.3375L13.5375 16.5875L18.7125 11.425C19.075 11.05 19.675 11.05 20.0375 11.425C20.4 11.7875 20.4 12.375 20.0375 12.75Z"
+                                fill="#00BCD0" />
+                        </svg>
+                        Home Improvement
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <path
+                                d="M15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 21.9 8.1 27.5 15 27.5C21.9 27.5 27.5 21.9 27.5 15C27.5 8.1 21.9 2.5 15 2.5ZM20.0375 12.75L14.2 18.575C14.025 18.7625 13.7875 18.85 13.5375 18.85C13.3 18.85 13.0625 18.7625 12.875 18.575L9.9625 15.6625C9.6 15.3 9.6 14.7 9.9625 14.3375C10.325 13.975 10.925 13.975 11.2875 14.3375L13.5375 16.5875L18.7125 11.425C19.075 11.05 19.675 11.05 20.0375 11.425C20.4 11.7875 20.4 12.375 20.0375 12.75Z"
+                                fill="#00BCD0" />
+                        </svg>
+                        Legal
+                    </td>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <path
+                                d="M15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 21.9 8.1 27.5 15 27.5C21.9 27.5 27.5 21.9 27.5 15C27.5 8.1 21.9 2.5 15 2.5ZM20.0375 12.75L14.2 18.575C14.025 18.7625 13.7875 18.85 13.5375 18.85C13.3 18.85 13.0625 18.7625 12.875 18.575L9.9625 15.6625C9.6 15.3 9.6 14.7 9.9625 14.3375C10.325 13.975 10.925 13.975 11.2875 14.3375L13.5375 16.5875L18.7125 11.425C19.075 11.05 19.675 11.05 20.0375 11.425C20.4 11.7875 20.4 12.375 20.0375 12.75Z"
+                                fill="#00BCD0" />
+                        </svg>
+                        Finance
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <path
+                                d="M15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 21.9 8.1 27.5 15 27.5C21.9 27.5 27.5 21.9 27.5 15C27.5 8.1 21.9 2.5 15 2.5ZM20.0375 12.75L14.2 18.575C14.025 18.7625 13.7875 18.85 13.5375 18.85C13.3 18.85 13.0625 18.7625 12.875 18.575L9.9625 15.6625C9.6 15.3 9.6 14.7 9.9625 14.3375C10.325 13.975 10.925 13.975 11.2875 14.3375L13.5375 16.5875L18.7125 11.425C19.075 11.05 19.675 11.05 20.0375 11.425C20.4 11.7875 20.4 12.375 20.0375 12.75Z"
+                                fill="#00BCD0" />
+                        </svg>
+                        Sweeps
+                    </td>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <path
+                                d="M15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 21.9 8.1 27.5 15 27.5C21.9 27.5 27.5 21.9 27.5 15C27.5 8.1 21.9 2.5 15 2.5ZM20.0375 12.75L14.2 18.575C14.025 18.7625 13.7875 18.85 13.5375 18.85C13.3 18.85 13.0625 18.7625 12.875 18.575L9.9625 15.6625C9.6 15.3 9.6 14.7 9.9625 14.3375C10.325 13.975 10.925 13.975 11.2875 14.3375L13.5375 16.5875L18.7125 11.425C19.075 11.05 19.675 11.05 20.0375 11.425C20.4 11.7875 20.4 12.375 20.0375 12.75Z"
+                                fill="#00BCD0" />
+                        </svg>
+                        Nutra
+                    </td>
+                </tr>
+            </table>
+             <a href="https://rayadvertising.everflowclient.io/affiliate/signup">
+            <button class="slide_from_top heroButton1">GET AN ACCOUNT</button>
+            </a>
+        </div>
+        <div class="VerticalsBenefitsCard">
+            <h1 class="VerticalsBenefitsCardTitel">Perks & Benefits</h1>
+            <p class="VerticalsBenefitsCardText">
+                Affiliates display ads with a unique phone number, and when a customer calls, they are instantly
+                connected to your sales team or call center.
+            </p>
+            <table>
+                <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <path
+                                d="M15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 21.9 8.1 27.5 15 27.5C21.9 27.5 27.5 21.9 27.5 15C27.5 8.1 21.9 2.5 15 2.5ZM20.0375 12.75L14.2 18.575C14.025 18.7625 13.7875 18.85 13.5375 18.85C13.3 18.85 13.0625 18.7625 12.875 18.575L9.9625 15.6625C9.6 15.3 9.6 14.7 9.9625 14.3375C10.325 13.975 10.925 13.975 11.2875 14.3375L13.5375 16.5875L18.7125 11.425C19.075 11.05 19.675 11.05 20.0375 11.425C20.4 11.7875 20.4 12.375 20.0375 12.75Z"
+                                fill="#00BCD0" />
+                        </svg>
+                       Competitive payouts
+                    </td>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <path
+                                d="M15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 21.9 8.1 27.5 15 27.5C21.9 27.5 27.5 21.9 27.5 15C27.5 8.1 21.9 2.5 15 2.5ZM20.0375 12.75L14.2 18.575C14.025 18.7625 13.7875 18.85 13.5375 18.85C13.3 18.85 13.0625 18.7625 12.875 18.575L9.9625 15.6625C9.6 15.3 9.6 14.7 9.9625 14.3375C10.325 13.975 10.925 13.975 11.2875 14.3375L13.5375 16.5875L18.7125 11.425C19.075 11.05 19.675 11.05 20.0375 11.425C20.4 11.7875 20.4 12.375 20.0375 12.75Z"
+                                fill="#00BCD0" />
+                        </svg>
+                        Easy API integration
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <path
+                                d="M15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 21.9 8.1 27.5 15 27.5C21.9 27.5 27.5 21.9 27.5 15C27.5 8.1 21.9 2.5 15 2.5ZM20.0375 12.75L14.2 18.575C14.025 18.7625 13.7875 18.85 13.5375 18.85C13.3 18.85 13.0625 18.7625 12.875 18.575L9.9625 15.6625C9.6 15.3 9.6 14.7 9.9625 14.3375C10.325 13.975 10.925 13.975 11.2875 14.3375L13.5375 16.5875L18.7125 11.425C19.075 11.05 19.675 11.05 20.0375 11.425C20.4 11.7875 20.4 12.375 20.0375 12.75Z"
+                                fill="#00BCD0" />
+                        </svg>
+                        Compliance support
+                    </td>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <path
+                                d="M15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 21.9 8.1 27.5 15 27.5C21.9 27.5 27.5 21.9 27.5 15C27.5 8.1 21.9 2.5 15 2.5ZM20.0375 12.75L14.2 18.575C14.025 18.7625 13.7875 18.85 13.5375 18.85C13.3 18.85 13.0625 18.7625 12.875 18.575L9.9625 15.6625C9.6 15.3 9.6 14.7 9.9625 14.3375C10.325 13.975 10.925 13.975 11.2875 14.3375L13.5375 16.5875L18.7125 11.425C19.075 11.05 19.675 11.05 20.0375 11.425C20.4 11.7875 20.4 12.375 20.0375 12.75Z"
+                                fill="#00BCD0" />
+                        </svg>
+                        Diverse Offer Selection
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <path
+                                d="M15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 21.9 8.1 27.5 15 27.5C21.9 27.5 27.5 21.9 27.5 15C27.5 8.1 21.9 2.5 15 2.5ZM20.0375 12.75L14.2 18.575C14.025 18.7625 13.7875 18.85 13.5375 18.85C13.3 18.85 13.0625 18.7625 12.875 18.575L9.9625 15.6625C9.6 15.3 9.6 14.7 9.9625 14.3375C10.325 13.975 10.925 13.975 11.2875 14.3375L13.5375 16.5875L18.7125 11.425C19.075 11.05 19.675 11.05 20.0375 11.425C20.4 11.7875 20.4 12.375 20.0375 12.75Z"
+                                fill="#00BCD0" />
+                        </svg>
+                       Multiple verticals
+                    </td>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <path
+                                d="M15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 21.9 8.1 27.5 15 27.5C21.9 27.5 27.5 21.9 27.5 15C27.5 8.1 21.9 2.5 15 2.5ZM20.0375 12.75L14.2 18.575C14.025 18.7625 13.7875 18.85 13.5375 18.85C13.3 18.85 13.0625 18.7625 12.875 18.575L9.9625 15.6625C9.6 15.3 9.6 14.7 9.9625 14.3375C10.325 13.975 10.925 13.975 11.2875 14.3375L13.5375 16.5875L18.7125 11.425C19.075 11.05 19.675 11.05 20.0375 11.425C20.4 11.7875 20.4 12.375 20.0375 12.75Z"
+                                fill="#00BCD0" />
+                        </svg>
+                        Comprehensive Tools
+                    </td>
+                </tr>
+            </table>
+            <a href="https://rayadvertising.everflowclient.io/affiliate/signup">
+            <button class="slide_from_top heroButton1">SIGN UP NOW</button>
+            </a>
+        </div>
     </div>
 </div>
 
-<div class="trafficPatner featuredIn">
+<div class="trafficPatner publishertrafficPatner featuredIn">
     <h1 class="trafficPatnerTitle">Featured In</h1>
     <div class="trafficPatnerWaper">
         <div class="trafficPatnerWaperItem">
@@ -190,6 +224,8 @@
     </div>
 </div>
 <div class="proudlySponsoring">
+    <img class="proudlySponsoringBG" src="{% static 'images/Assets/proudlySponsoring.webp' %}"
+        alt="proudlySponsoring.webp" loading='lazy'>
     <div class="container">
         <h1 class="proudlySponsoringHeader">Proudly Sponsoring</h1>
         <p class="proudlySponsoringText">
@@ -210,11 +246,6 @@
                 <a href="{{proudly.ButtonLink}}">
                     <button class="slide_from_left proudlySponsoringCardButton">
                         Learn More
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                            class="bi bi-arrow-right ms-2" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-                        </svg>
                     </button>
                 </a>
             </div>
@@ -226,7 +257,7 @@
     <div class="imagesGalaryHeader">
         <div class="imagesGalaryHeaderTitel"><img src="{% static 'images/Assets/gallery.svg' %}" alt="" class="me-2"
                 loading="lazy">From Our gallery</div>
-        <a href="{% url 'blog' %}">
+        <a href="{% url 'gallery' %}">
             <button class="slide_from_left imagesGalaryButton">
                 Learn More
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -243,24 +274,23 @@
                 <button class="slider_nav active" type="button" data-bs-target="#carouselExampleIndicatorsPC"
                     data-bs-slide-to="0" aria-current="true" aria-label="Slide 0"></button>
                 {% for i in sliderCunterNumber %}
-                    <button class="slider_nav" type="button" data-bs-target="#carouselExampleIndicatorsPC"
-                        data-bs-slide-to="{{forloop.counter}}" aria-label="{{forloop.counter}}"></button>
+                <button class="slider_nav" type="button" data-bs-target="#carouselExampleIndicatorsPC"
+                    data-bs-slide-to="{{forloop.counter}}" aria-label="{{forloop.counter}}"></button>
                 {% endfor %}
-                
+
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="2000">
                     <div class="galleryCardImagesWaper mt-5">
                         {% for slide in getGalleryImages %}
                         <!-- <h1>{{forloop.counter}}</h1> -->
-                        <img class="galleryCardImagesImages" src="{{slide.image}}" alt="image"
-                            loading="lazy">
+                        <img class="galleryCardImagesImages" src="{{slide.image}}" alt="image" loading="lazy">
 
                         {% if forloop.counter|divisibleby:4 and forloop.counter > 0 and not forloop.last %}
-                        </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                        <div class="galleryCardImagesWaper mt-5">
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="galleryCardImagesWaper mt-5">
                         {% else %}
                         {% endif %}
                         {% endfor %}
@@ -291,27 +321,26 @@
                 <button class="slider_nav active" type="button" data-bs-target="#carouselExampleIndicatorsPC"
                     data-bs-slide-to="0" aria-current="true" aria-label="Slide 0"></button>
                 {% for i in Mobile_sliderCunterNumber %}
-                    <button class="slider_nav" type="button" data-bs-target="#carouselExampleIndicatorsPC"
-                        data-bs-slide-to="{{forloop.counter}}" aria-label="{{forloop.counter}}"></button>
+                <button class="slider_nav" type="button" data-bs-target="#carouselExampleIndicatorsPC"
+                    data-bs-slide-to="{{forloop.counter}}" aria-label="{{forloop.counter}}"></button>
                 {% endfor %}
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="2000">
                     <div class="galleryCardImagesWaper mt-3">
-                       {% for slide in getGalleryImages %}
-                        <img class="galleryCardImagesImages" src="{{slide.image}}" alt=""
-                            loading="lazy">
-                            {% if forloop.counter|divisibleby:2 and forloop.counter > 0 and not forloop.last %}
-                        </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                        <div class="galleryCardImagesWaper mt-3">
+                        {% for slide in getGalleryImages %}
+                        <img class="galleryCardImagesImages" src="{{slide.image}}" alt="" loading="lazy">
+                        {% if forloop.counter|divisibleby:2 and forloop.counter > 0 and not forloop.last %}
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="galleryCardImagesWaper mt-3">
                         {% else %}
                         {% endif %}
                         {% endfor %}
                     </div>
                 </div>
-                
+
             </div>
             <button style="display: none;" class="carousel-control-prev" type="button"
                 data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -325,7 +354,7 @@
             </button>
         </div>
     </div>
-    <a href="{% url 'blog' %}" class="mt-3">
+    <a href="{% url 'gallery' %}" class="mt-3">
         <button class="slide_from_left imagesGalaryButton">
             Learn More
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -336,19 +365,19 @@
         </button>
     </a>
 </div>
-<div class="newsLatter forPCTP">
-    <img src="{% static 'images/Assets/newslatter.webp' %}" alt="images/Assets/newslatter.webp" class="newsLatterBG"
-        loading="lazy">
-    <div class="newsLatterOverlay"></div>
-    <div class="newsLatterContent">
-        <div>
-            <h1 class="newsLatterContentTitel">
-                Publishers of Ray Advertising have the flexibility to choose the campaigns that align with their
-                audience and niche
-            </h1>
-            <div class="newsLatterButton mt-4">
-                <a href="https://rayadvertising.everflowclient.io/affiliate/signup"><button class="slide_from_top heroButton1">GET AN ACCOUNT</button></a>
-            </div>
+<div class="ReadyTOTransfrom">
+    <img class="ReadyTOTransfromBG" src="{% static 'images/Assets/ReadyTOTransfrom.webp' %}" alt="ReadyTOTransfrom.webp"
+        loading='lazy'>
+    <div class="ReadyTOTransfromContentBox container" data-aos="zoom-in-up">
+        <div class="ReadyTOTransfromContentWaper">
+            <h1>Publishers of Ray Advertising have the flexibility to choose the campaigns that align with their audience and niche</h1>
+        </div>
+        <div class="ReadyTOTransfromButtonWaper">
+             <a href="https://rayadvertising.everflowclient.io/affiliate/signup">
+                <button class="ReadyTOTransfromButton2">
+                    Get started
+                </button>
+            </a>
         </div>
     </div>
 </div>

@@ -8,6 +8,7 @@ urlpatterns = [
     path('publisher', publisher, name="publisher"),
     path('advertiser', advertiser, name="advertiser"),
     path('paypercall', paypercall, name="paypercall"),
+    path('mediabuying', mediabuying, name="mediabuying"),
     path('affiliatenetwork', affiliatenetwork, name="affiliatenetwork"),
     path('leadgeneration', leadgeneration, name="leadgeneration"),
     path('blog', blog, name="blog"),
@@ -22,6 +23,6 @@ urlpatterns = [
     path('careers/q/', careersSearch, name="careersSearch"),
     path('contact', contact, name="contact"),
     path('privacypolicy', privacypolicy, name="privacypolicy"),
-    path('AgencyTermsandConditions', AgencyTermsandConditions, name="AgencyTermsandConditions"),
-    path('PublisherTermsandConditions', PublisherTermsandConditions, name="PublisherTermsandConditions"),
+    path('termsandconditions', TermsandConditions, name="TermsandConditions"),
+    path('disclaimer', disclaimer, name="disclaimer"),
 ]

@@ -36,7 +36,7 @@ class Event(models.Model):
     Images=models.FileField(upload_to="media/Event/")
     Thumbnail=models.FileField(upload_to="media/Event/")
     Body=tinymce_models.HTMLField()
-    PostDate=models.DateField(default=datetime.datetime.today())
+    PostDate=models.CharField(max_length=100)
     Location=models.CharField(max_length=100)
     def __str__(self):
         return self.Titel
@@ -79,10 +79,10 @@ class PrivacyPolicy(models.Model):
     Privacy_Policy=tinymce_models.HTMLField()
     Last_Update=models.DateField(default=datetime.datetime.today())
 
-class AdvertiserTermsAndConditions(models.Model):
+class TermsAndConditions(models.Model):
     Terms_Conditions=tinymce_models.HTMLField()
     Last_Update=models.DateField(default=datetime.datetime.today())
 
-class PublisherTermsAndConditions(models.Model):
+class Disclaimer(models.Model):
     Terms_Conditions=tinymce_models.HTMLField()
     Last_Update=models.DateField(default=datetime.datetime.today())

@@ -21,27 +21,29 @@
         <h1 class="AboutheroHeader">Careers</h1>
     </div>
 </div>
-<div class="WhoWeAre container">
-    <div class="WhoWeAreWaper">
-        <div class="WhoWeArerImages">
-            <img src="{% static 'images/Assets/carrerpageafterhero.webp' %}" alt="" loading="lazy">
-        </div>
-        <div class="WhoWeAreContent">
-            <h1>Build your career in our community</h1>
-            <p>
-                Ray Advertising, a leading performance-driven marketing agency, specializes in pay-per-call, affiliate
-                network, and lead generation services. Mr. Ripon Kumar, The CEO and founder, started the visionary
-                journey of this company in 2019. Its head office is situated in Redding, California, with a supporting
-                office in Bogra, Bangladesh. Through a vast network of publishers and our in-house media buying team,
-                led by the CEO, we empower businesses to connect with real time customers in generating high-quality
-                leads and targeted traffic.
-            </p>
+<div class="WhoWeAre">
+    <div class="container">
+        <div class="WhoWeAreWaper">
+            <div class="WhoWeArerImages" data-aos="fade-right">
+                <img src="{% static 'images/Assets/carrerpageafterhero.webp' %}" alt="" loading="lazy">
+            </div>
+            <div class="WhoWeAreContent" data-aos="fade-left">
+                <h1>Build your career in our community</h1>
+                <p>
+                    Ray Advertising is a rapidly expanding performance marketing agency. We offer exciting career
+                    opportunities in digital marketing, affiliate management, and lead generation. Our dynamic culture
+                    fosters innovation and growth, providing hands-on experience with advanced marketing strategies and
+                    tools. We support our team through training, mentorship, and collaborative projects, helping
+                    individuals excel. Join our diverse team of passionate professionals dedicated to delivering results
+                    and building fulfilling careers in performance marketing.
+                </p>
+            </div>
         </div>
     </div>
 </div>
 <div class="EmployeeBenefits">
-    <h1 class="EmployeeBenefitsTitel">Employee Benefits</h1>
-    <div class="EmployeeBenefitsCardWaper">
+    <h1 class="EmployeeBenefitsTitel" data-aos="zoom-in">Employee Benefits</h1>
+    <div class="EmployeeBenefitsCardWaper container" data-aos="zoom-in">
         <div class="EmployeeBenefitsCard">
             <div class="EmployeeBenefitsCardIcon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
@@ -115,7 +117,7 @@
             <h5 class="EmployeeBenefitsCardTitel">Generous Vacation and Sick Leave Policy</h5>
         </div>
     </div>
-    <div class="EmployeeBenefitsCardWaper">
+    <div class="EmployeeBenefitsCardWaper container" data-aos="zoom-in">
         <div class="EmployeeBenefitsCard">
             <div class="EmployeeBenefitsCardIcon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51" fill="none">
@@ -181,7 +183,7 @@
                         fill="#00BCD0" />
                 </svg>
             </div>
-            <h5 class="EmployeeBenefitsCardTitel">Yearly Holidays in Bangladesh and the US</h5>
+            <h5 class="EmployeeBenefitsCardTitel">Yearly Attractive Holidays</h5>
         </div>
     </div>
 </div>
@@ -224,8 +226,8 @@
             <form method="POST" action="{% url 'careersSearch' %}">
                 {% csrf_token %}
                 <div class="input-group">
-                    <input name="searchFild" type="text" class="form-control" placeholder="Search" aria-label="Recipient's username"
-                        aria-describedby="basic-addon2">
+                    <input name="searchFild" type="text" class="form-control" placeholder="Search"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
                     <button type="submit" class="input-group-text" id="basic-addon2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-search" viewBox="0 0 16 16">
@@ -237,7 +239,7 @@
             </form>
         </div>
     </div>
-    <div class="JobCardWaper mt-5 container">
+    <div class="JobCardWaper mt-5 container" data-aos="zoom-in">
         {% if getalljobs %}
         {% for job in getalljobs %}
         <div class="JobCard">

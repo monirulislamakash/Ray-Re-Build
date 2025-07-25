@@ -128,6 +128,19 @@ def paypercall(request):
     }
     return render(request,"paypercall.html",sendvar)
 
+def mediabuying(request):
+    getGalleryImages=Gallery.objects.all()
+    n=len(getGalleryImages)
+    NumberOfSlides=n//4 + ceil((n/4)-(n//4))
+    Mobile_NumberOfSlides=n//2 + ceil((n/2)-(n//2))
+
+    sendvar={
+        'getGalleryImages':getGalleryImages,
+        'sliderCunterNumber':range(1,NumberOfSlides),
+        'Mobile_sliderCunterNumber':range(1,Mobile_NumberOfSlides),
+    }
+    return render(request,"mediabuying.html",sendvar)
+
 def affiliatenetwork(request):
     getGalleryImages=Gallery.objects.all()
     n=len(getGalleryImages)
@@ -214,7 +227,7 @@ def detailBlog(request,id):
     return render(request,"detailBlog.html",sendvar)
 
 def events(request):
-    GetAllBlog=Event.objects.all()
+    GetAllBlog=Event.objects.all().order_by('-id')
     pagination=Paginator(GetAllBlog,9)
     pageNumber=request.GET.get('page')
     pageObject=pagination.get_page(pageNumber)
@@ -309,16 +322,16 @@ def privacypolicy(request):
     }
     return render(request,"privacypolicy.html",sendvar)
 
-def AgencyTermsandConditions(request):
-    getBody=AdvertiserTermsAndConditions.objects.last()
+def TermsandConditions(request):
+    getBody=TermsAndConditions.objects.last()
     sendvar={
         "getBody":getBody
     }
-    return render(request,"AgencyTermsandConditions.html",sendvar)
+    return render(request,"TermsandConditions.html",sendvar)
 
-def PublisherTermsandConditions(request):
-    getBody=PublisherTermsAndConditions.objects.last()
+def disclaimer(request):
+    getBody=Disclaimer.objects.last()
     sendvar={
         "getBody":getBody
     }
-    return render(request,"PublisherTermsandConditions.html",sendvar)
+    return render(request,"disclaimer.html",sendvar)

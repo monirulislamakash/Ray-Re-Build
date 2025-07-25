@@ -5,32 +5,41 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% comment %} {% endcomment %}
-    {% comment %} ====Oswald==== {% endcomment %}
+    {% comment %}Font{% endcomment %}
+    {% comment %} ===Montserrat=== {% endcomment %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    {% comment %} ====Oswald==== {% endcomment %}
+        {% comment %}
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        {% endcomment %}
     {% comment %} ====Poppins==== {% endcomment %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    {% comment %} {% endcomment %}
+    {% comment %}Font End{% endcomment %}
+    {% comment %} Animations {% endcomment %}
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    {% comment %} Animations End {% endcomment %}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     {% block head %}{% endblock %}
     <title>{% block title %}Ray Advertising LLC{% endblock %}</title>
-    {% comment %} <link rel="stylesheet" href="{% static 'css/main.css' %}"> {% endcomment %}
-    <link rel="stylesheet" href="{% static 'css/minfy.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    {% comment %} <link rel="stylesheet" href="{% static 'css/minfy.css' %}"> {% endcomment %}
 </head>
-
 <body>
     {% comment %} Navbar {% endcomment %}
     <nav class="navbar navbar-expand-lg bg-body-tertiary navMenu">
         <div class="container">
-            <a class="navbar-brand" href="{% url 'home' %}"><img class="logo" src="{% static 'images/Assets/Logo.webp' %}" alt="Logo"
-                    loading="lazy"></a>
+            <a class="navbar-brand" href="{% url 'home' %}"><img class="logo"
+                    src="{% static 'images/Assets/Logo.webp' %}" alt="Logo" loading="lazy"></a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -45,6 +54,7 @@
                             <li><a class="dropdown-item" href="{% url 'paypercall' %}">Pay Per Call</a></li>
                             <li><a class="dropdown-item" href="{% url 'leadgeneration' %}">Lead Generation</a></li>
                             <li><a class="dropdown-item" href="{% url 'affiliatenetwork' %}">Affiliate Network</a></li>
+                            <li><a class="dropdown-item" href="{% url 'mediabuying' %}">Media Buying</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -68,7 +78,7 @@
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle joinButton" type="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Join Us
+                            Get Started
                         </button>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="{% url 'publisher' %}">Publisher</a></li>
@@ -81,7 +91,7 @@
                 <div class="dropdown me-2">
                     <button class="btn btn-secondary dropdown-toggle joinMobile joinButton" type="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        Join Us
+                        Get Started
                     </button>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="{% url 'publisher' %}">Publisher</a></li>
@@ -102,8 +112,8 @@
     {% comment %} mobile Navbar Satter {% endcomment %}
     <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header backgroundBlu">
-            <a class="navbar-brand" href="{% url 'home' %}"><img class="logo" src="{% static 'images/Assets/Logo.webp' %}" alt="Logo"
-                    loading="lazy"></a>
+            <a class="navbar-brand" href="{% url 'home' %}"><img class="logo"
+                    src="{% static 'images/Assets/Logo.webp' %}" alt="Logo" loading="lazy"></a>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body backgroundBlu">
@@ -117,6 +127,7 @@
                         <li><a class="dropdown-item" href="{% url 'paypercall' %}">Pay Per Call</a></li>
                         <li><a class="dropdown-item" href="{% url 'leadgeneration' %}">Lead Generation</a></li>
                         <li><a class="dropdown-item" href="{% url 'affiliatenetwork' %}">Affiliate Network</a></li>
+                        <li><a class="dropdown-item" href="{% url 'mediabuying' %}">Media Buying</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -146,8 +157,8 @@
         <div class="container footerWaper">
             <div class="uperFooter">
                 <div class="footerLogo">
-                    <a class="navbar-brand" href="{% url 'home' %}"><img class="logo" src="{% static 'images/Assets/Logo.webp' %}"
-                            alt="Logo" loading="lazy"></a>
+                    <a class="navbar-brand" href="{% url 'home' %}"><img class="logo"
+                            src="{% static 'images/Assets/Logo.webp' %}" alt="Logo" loading="lazy"></a>
                     <div class="footerIconWaper">
                         <a href="https://www.facebook.com/rayadvertisingllc" id='facebook' target='blank'>
                             <div class="footerIcon">
@@ -159,15 +170,15 @@
                                             fill="#00BCD0" />
                                     </g>
                                     <defs>
-                                        <clipPath 
-                                        id="clip0_270_7942">
+                                        <clipPath id="clip0_270_7942">
                                             <rect width="9" height="14" fill="white" />
                                         </clipPath>
                                     </defs>
                                 </svg>
                             </div>
                         </a>
-                        <a href="https://www.linkedin.com/company/rayadvertising/posts/?feedView=all" id='linkdin' target='blank'>
+                        <a href="https://www.linkedin.com/company/rayadvertising/posts/?feedView=all" id='linkdin'
+                            target='blank'>
                             <div class="footerIcon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
                                     fill="none">
@@ -229,23 +240,33 @@
                             </li>
                             <li>
                                 <a href="{% url 'leadgeneration' %}" class="footerClickLink">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
-                                </svg>
-                                Lead Generation
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                    </svg>
+                                    Lead Generation
                                 </a>
                             </li>
                             <li>
                                 <a href="{% url 'affiliatenetwork' %}" class="footerClickLink">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
-                                </svg>
-                                Affiliate Marketing
-                            </a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                    </svg>
+                                    Affiliate Marketing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'mediabuying' %}" class="footerClickLink">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                    </svg>
+                                    Media Buying
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -254,43 +275,43 @@
                         <ul>
                             <li>
                                 <a href="{% url 'about' %}" class="footerClickLink">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
-                                </svg>
-                                About Us
-                            </a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                    </svg>
+                                    About Us
+                                </a>
                             </li>
                             <li>
                                 <a href="{% url 'contact' %}" class="footerClickLink">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
-                                </svg>
-                                Contact Us
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                    </svg>
+                                    Contact Us
                                 </a>
                             </li>
                             <li>
                                 <a href="{% url 'careers' %}" class="footerClickLink">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
-                                </svg>
-                                Careers
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                    </svg>
+                                    Careers
                                 </a>
                             </li>
                             <li>
                                 <a href="{% url 'blog' %}" class="footerClickLink">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
-                                </svg>
-                                Blog
-                            </a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                    </svg>
+                                    Blog
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -301,23 +322,23 @@
                     <ul>
                         <li>
                             <a href="{% url 'advertiser' %}" class="footerClickLink">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            Advertisers
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                Advertisers
                             </a>
                         </li>
                         <li>
-                        <a href="{% url 'publisher' %}" class="footerClickLink">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
-                            </svg>
-                            Affiliates
-                        </a>
+                            <a href="{% url 'publisher' %}" class="footerClickLink">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                </svg>
+                                Affiliates
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -333,22 +354,22 @@
                     <p>1267 Willis ST STE 200<br> Redding CA 96001 USA</p>
                     <p>
                         <a href="tel:+14356277657" class="footerClickLink">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-                        </svg>
-                         (435) 627-7657
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                            </svg>
+                            (435) 627-7657
                         </a>
                     </p>
                     <p>
                         <a href="mailto:contact@rayadvertising.com" class="footerClickLink">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
-                        </svg>
-                        contact@rayadvertising.com
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                            </svg>
+                            contact@rayadvertising.com
                         </a>
                     </p>
                 </div>
@@ -358,13 +379,35 @@
                 <hr>
                 <div class="lowerFooterWaper">
                     <a href="#" class="footerClickLink">
-                        <p>Legal | <a class="text-white" href="{% url 'AgencyTermsandConditions' %}">privacy policy</a></p>
+                        <p><a class="text-white" href="{% url 'privacypolicy' %}">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                </svg>
+                            Privacy Policy
+                        </a>
+                        </p>
                     </a>
                     <a class="footerClickLink">
-                        <p><a class="text-white" href="{% url 'AgencyTermsandConditions' %}">Advertiser / Agency Terms and Conditions</a></p>
+                        <p class="footerClickLinkPragrap"><a class="text-white" href="{% url 'TermsandConditions' %}">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                </svg>
+                            Terms and Conditions
+                        </a></p>
                     </a>
                     <a href="#" class="footerClickLink">
-                        <p><a class="text-white" href="{% url 'PublisherTermsandConditions' %}">Publisher / Terms and Conditions</a></p>
+                        <p><a class="text-white" href="{% url 'disclaimer' %}">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                </svg>
+                            Disclaimer
+                        </a></p>
                     </a>
                 </div>
             </div>
@@ -376,6 +419,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    {% comment %} Animation {% endcomment %}
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

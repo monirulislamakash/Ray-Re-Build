@@ -44,10 +44,10 @@ class PrivacyPolicyAdmin(admin.ModelAdmin):
     list_display = ('Last_Update',)
 admin.site.register(PrivacyPolicy,PrivacyPolicyAdmin)
 
-class AdvertiserTermsAndConditionsAdmin(admin.ModelAdmin):
+class TermsAndConditionsAdmin(admin.ModelAdmin):
     list_display = ('Last_Update',)
-admin.site.register(AdvertiserTermsAndConditions,AdvertiserTermsAndConditionsAdmin)
+admin.site.register(TermsAndConditions,TermsAndConditionsAdmin)
 
-class PublisherTermsAndConditionsAdmin(admin.ModelAdmin):
+class DisclaimerAdmin(admin.ModelAdmin):
     list_display = ('Last_Update',)
-admin.site.register(PublisherTermsAndConditions,PublisherTermsAndConditionsAdmin)
+admin.site.register(Disclaimer,DisclaimerAdmin)
